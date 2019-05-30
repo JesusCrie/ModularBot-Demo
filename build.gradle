@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'com.jesus-crie'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+ext {
+    modularVersion = '2.5.0_23'
+}
+
+compileJava {
+    options.compilerArgs << '-parameters'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation "com.jesus-crie:modularbot-core:$modularVersion"
+    implementation "com.jesus-crie:modularbot-logger:$modularVersion"
+    implementation "com.jesus-crie:modularbot-command:$modularVersion"
+    implementation "com.jesus-crie:modularbot-night-config-wrapper:$modularVersion"
+
+    testCompile 'junit:junit:4.12'
+}
