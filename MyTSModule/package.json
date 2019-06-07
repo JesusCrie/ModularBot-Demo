@@ -1,0 +1,16 @@
+{
+  "name": "modularbotdemo-mytsmodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "author": "Jesus_Crie <lucas.malandrino@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modularbot/types-core": "^1.1.1",
+    "@modularbot/types-graal": "^1.1.1",
+    "@modularbot/types-jda": "^1.1.1"
+  }
+}

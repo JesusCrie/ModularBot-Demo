@@ -1,6 +1,7 @@
 package com.jesus_crie.examplebot;
 
 import com.jesus_crie.examplebot.commands.CommandRegistryModule;
+import com.jesus_crie.examplebot.tsmodule.MyTSModule;
 import com.jesus_crie.modularbot.core.ModularBot;
 import com.jesus_crie.modularbot.core.ModularBotBuilder;
 import com.jesus_crie.modularbot.logger.ConsoleLoggerModule;
@@ -20,7 +21,8 @@ public class ExampleBot {
                 .provideBuiltModules(new ConsoleLoggerModule())
                 .requestModules(
                         // Explicitly request our modules
-                        CommandRegistryModule.class
+                        CommandRegistryModule.class,
+                        MyTSModule.class
                 )
                 // Request the base modules of the framework
                 .requestBaseModules()
